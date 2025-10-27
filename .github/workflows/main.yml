@@ -1,0 +1,14 @@
+name: "Manual first action"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a quick echo step
+        run: echo "سلام — این اولین اکشن من! (manual step)"
